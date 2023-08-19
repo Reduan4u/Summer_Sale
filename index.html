@@ -33,129 +33,188 @@
         </section>
     </header>
 
-    <main class="bg-gray-200">
-        <section class="grid grid-cols-4">
+    <main class="bg-gray-100">
+        <section class="grid grid-cols-4 w-10/12 gap-10 mx-auto py-20">
             <div class="col-span-3">
 
-                <div>
-                    <h2>Kitchenware</h2>
-                    <div class="grid grid-cols-3">
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                <!-- Kitchenware -->
+                <div class="pb-16">
+                    <h2 class="pb-6 text-4xl font-semibold">Kitchenware</h2>
+                    <div class="grid grid-cols-3 gap-10">
+                        <!-- Card-1 -->
+                        <div onclick="handleClick(this)" class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 py-10 mx-4 my-4 rounded-md bg-gray-100">
+                                <img src="./images/prod1.png" alt="Shoes" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
+                                <p class=" text-xl font-bold">K. Accessories</p>
+                                <p class="text-xl text-red-400 font-semibold"><span>39.00</span> TK</p>
                             </div>
                         </div>
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                        <!-- Card-2 -->
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 py-10 mx-4 my-4 rounded-md bg-gray-100">
+                                <img src="./images/prod2.png" alt="Shoes" />
                             </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
+                            <div class="card-body items-center text-center  ">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
+                                <p class=" text-xl font-bold">K. Accessories</p>
+                                <p class="text-xl text-red-400 font-semibold"><span>25.00</span> TK</p>
                             </div>
                         </div>
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                        <!-- Card-3 -->
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 py-10 mx-4 my-4 rounded-md bg-gray-100">
+                                <img src="./images/prod3.png" alt="Shoes" />
                             </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
+                            <div class="card-body items-center text-center  ">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>Kitchenware</h2>
-                    <div class="grid grid-cols-3">
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
-                            </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
-                            </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
-                            </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
+                                <p class=" text-xl font-bold">Home Cooker</p>
+                                <p class="text-xl text-red-400 font-semibold"><span>49.00</span> TK</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h2>Kitchenware</h2>
-                    <div class="grid grid-cols-3">
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+
+                <!-- Item-1 -->
+                <div class="pb-16">
+                    <h2 class="pb-6 text-4xl font-semibold">Sportswear</h2>
+                    <div class="grid grid-cols-3 gap-10">
+                        <!-- Card-1 -->
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 py-10 mx-4 my-4 rounded-md bg-gray-100">
+                                <img src="./images/prod4.png" alt="Shoes" />
                             </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
+                            <div class="card-body items-center text-center  ">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
+                                <p class=" text-xl font-bold">Sports Back Cap</p>
+                                <p class="text-xl text-red-400 font-semibold"><span>49.00</span> TK</p>
                             </div>
                         </div>
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                        <!-- Card-2 -->
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 py-10 mx-4 my-4 rounded-md bg-gray-100">
+                                <img src="./images/prod5.png" alt="Shoes" />
                             </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
+                            <div class="card-body items-center text-center  ">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
+                                <p class=" text-xl font-bold">Full Jersey Set</p>
+                                <p class="text-xl text-red-400 font-semibold"><span>69.00</span> TK</p>
                             </div>
                         </div>
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                        <!-- Card-3 -->
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 py-10 mx-4 my-4 rounded-md bg-gray-100">
+                                <img src="./images/prod6.png" alt="Shoes" />
                             </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
+                            <div class="card-body items-center text-center  ">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
+                                <p class=" text-xl font-bold">Sports cates</p>
+                                <p class="text-xl text-red-400 font-semibold"><span>159.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item-3 -->
+                <div class="pb-20">
+                    <h2 class=" pb-6 text-4xl font-semibold">Furniture</h2>
+                    <div class="grid grid-cols-3 gap-10">
+                        <!-- Card-1 -->
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 py-10 mx-4 my-4 rounded-md bg-gray-100">
+                                <img src="./images/prod7.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body items-center text-center  ">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class=" text-xl font-bold">Single Relax Chair</p>
+                                <p class="text-xl text-red-400 font-semibold"><span>185.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- Card-2 -->
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 py-10 mx-4 my-4 rounded-md bg-gray-100">
+                                <img src="./images/prod8.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body items-center text-center  ">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class=" text-xl font-bold">Children play</p>
+                                <p class="text-xl text-red-400 font-semibold"><span>299.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- Card-3 -->
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 py-10 mx-4 my-4 rounded-md bg-gray-100">
+                                <img src="./images/prod9.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body items-center text-center  ">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class=" text-xl font-bold">Flexible Sofa</p>
+                                <p class="text-xl text-red-400 font-semibold"><span>339.00</span> TK</p>
                             </div>
                         </div>
                     </div>
@@ -163,30 +222,35 @@
 
 
             </div>
-            <div class="col-span-1 ">
+            <div class="col-span-1 mt-16 ">
                 <div>
-                    <h2>Have Coupon?</h2>
-                    <div>
-                        <input type="text" placeholder="Coupon Code">
-                        <button>Apply</button>
-                    </div>
-                    <div>
-                        <div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae facere voluptas
-                                incidunt dolores unde ipsa culpa minima, ab cumque amet tempore optio explicabo iste
-                                nobis eos facilis repudiandae. Molestias reprehenderit fugiat dolore atque odio
-                                reiciendis iure totam ipsum unde velit laboriosam sunt, laudantium amet quibusdam fuga
-                                obcaecati quaerat, ea voluptas.</p>
-                        </div>
-                        <div>
-                            <p>Total Price: <span>00.00</span>TK</p>
-                            <p>Discount: <span>00.00</span>TK</p>
-                            <p>Total: <span>00.00</span>TK</p>
-                        </div>
-                        <div>
-                            <button>Make Purchase</button>
+                    <div id="couponPart" class="bg-white p-6 rounded-xl ">
+                        <h2 class=" text-2xl font-medium">Have Coupon?</h2>
+                        <div class="lg:flex mt-4">
+                            <input id="coupon-input" type="text" placeholder="Coupon Code"
+                                class="border-y-2 border-l-2 rounded-none rounded-l-lg px-4 py-2 w-2/3">
+                            <button
+                                class="btn btn-active btn-secondary px-4 rounded-none rounded-r-lg text-white text-lg"
+                                onclick="couponClick()">Apply</button>
                         </div>
                     </div>
+                    <div class="bg-white p-6 mt-6 rounded-xl">
+                        <ol id="selected-items">
+
+                        </ol>
+                        <div class="border-y-2 my-4 py-4 text-right">
+                            <p class="text-2xl font-medium">Total Price: <span class="text-red-400"
+                                    id="cart-total-price">00.00 </span>TK</p>
+                            <p class="text-2xl font-medium">Discount: <span class="text-red-400"
+                                    id="cart-discount">00.00 </span>TK</p>
+                            <p class="text-2xl font-medium">Total: <span class="text-red-400" id="cart-total">00.00
+                                </span>TK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-active btn-secondary -mt-10 px-10 rounded-lg text-white text-lg">Make
+                        Purchase</button>
                 </div>
             </div>
         </section>
@@ -194,7 +258,8 @@
     </main>
 
     <!-- Scripting -->
-    <script src="./js files/utilities.js"></script>
+    <script src=" ./js files/utilities.js">
+    </script>
 </body>
 
 </html>
