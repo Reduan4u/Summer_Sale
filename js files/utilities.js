@@ -2,16 +2,16 @@ let totalPrice = 0;
 let discount = 0;
 let total = 0;
 
-
 // Purchasing Product and Adding to Cart
 function handleClick(data) {
 
     // Item Name added to cart
     const selectedItemCard = document.getElementById("selected-items")
-    const productName = data.parentNode.parentNode.children[0].innerText;
-    const listItem = document.createElement("li");
-    listItem.textContent = productName;
-    selectedItemCard.appendChild(listItem);
+    const productName = data.children[1].children[1].innerText;
+    const count = selectedItemCard.childElementCount;
+    const li = document.createElement("p");
+    li.innerHTML = `${count + 1}. ${productName}`;
+    selectedItemCard.appendChild(li);
 
     // Cart Total Price 
     const productPriceString = data.children[1].children[2].children[0].innerText;
@@ -42,6 +42,7 @@ function handleClick(data) {
 
 // Coupon Apply and Calculation
 function couponClick(apply) {
+
     const couponCode = document.getElementById("coupon-input");
     const code = couponCode.value;
     couponCode.value = "";
@@ -62,6 +63,7 @@ function couponClick(apply) {
 
 // Resetting 
 function resetButton(reset) {
+
     totalPrice = 0;
     document.getElementById("cart-total").innerText = totalPrice.toFixed(2);
     document.getElementById("cart-discount").innerText = totalPrice.toFixed(2);
@@ -70,5 +72,4 @@ function resetButton(reset) {
     // Button Disable Condition
     document.getElementById("purchaseButton").disabled = true;
     document.getElementById("couponButton").disabled = true;
-
 }
